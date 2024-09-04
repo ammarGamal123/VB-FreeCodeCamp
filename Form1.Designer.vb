@@ -22,30 +22,41 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnGo = New System.Windows.Forms.Button()
+        Me.btnVariables = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnStart
+        'btnGo
         '
-        Me.btnStart.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnStart.Location = New System.Drawing.Point(295, 138)
-        Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(227, 95)
-        Me.btnStart.TabIndex = 0
-        Me.btnStart.Text = "Press Here"
-        Me.btnStart.UseVisualStyleBackColor = False
+        Me.btnGo.Location = New System.Drawing.Point(145, 46)
+        Me.btnGo.Name = "btnGo"
+        Me.btnGo.Size = New System.Drawing.Size(154, 84)
+        Me.btnGo.TabIndex = 0
+        Me.btnGo.Text = "Go"
+        Me.btnGo.UseVisualStyleBackColor = True
+        '
+        'btnVariables
+        '
+        Me.btnVariables.Location = New System.Drawing.Point(364, 46)
+        Me.btnVariables.Name = "btnVariables"
+        Me.btnVariables.Size = New System.Drawing.Size(167, 88)
+        Me.btnVariables.TabIndex = 1
+        Me.btnVariables.Text = "Variable Demonstration"
+        Me.btnVariables.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnStart)
+        Me.Controls.Add(Me.btnVariables)
+        Me.Controls.Add(Me.btnGo)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnStart As Button
+    Friend WithEvents btnGo As Button
+    Friend WithEvents btnVariables As Button
 End Class
