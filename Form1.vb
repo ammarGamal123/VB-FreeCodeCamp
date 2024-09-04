@@ -33,4 +33,36 @@
 
 
 
+    Private Sub btnDataTypes_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
+
+        Dim stMake As String
+        Dim stModel As String
+        Dim iDoors As Integer
+        Dim stColor As String
+        Dim bTaxed As Boolean
+        Dim iEngineSize As Integer
+        Dim decPrice As Decimal
+        Dim dtDataRegistered As Date
+
+        stMake = "Ford"
+        stModel = "Escort"
+        iDoors = 5
+        stColor = "Blue"
+        bTaxed = True
+        iEngineSize = 1200
+        decPrice = 9999.99
+        dtDataRegistered = #11/20/2024#
+
+        MsgBox("the car is " & stMake & vbNewLine & stModel & vbNewLine &
+               iDoors & vbNewLine & stColor & vbNewLine & iEngineSize &
+               vbNewLine & decPrice & vbNewLine & dtDataRegistered)
+
+
+
+
+
+    End Sub
+
+
+
 End Class
