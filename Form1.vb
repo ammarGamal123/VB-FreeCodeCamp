@@ -63,6 +63,35 @@
 
     End Sub
 
+    Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
+
+        Dim stFirstName, stLastName, stGender, stOccupation As String
+
+        stFirstName = txtFirstName.Text
+        stLastName = txtLastName.Text
+        stGender = txtGender.Text
+
+        stOccupation = lstOccupation.SelectedItem
+
+
+        MsgBox("Hello Mr. " & stFirstName & " " & stLastName &
+               " you are a " & stGender & " " & stOccupation)
+
+
+
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        lstOccupation.Items.Add("Writer")
+        lstOccupation.Items.Add("Actor")
+        lstOccupation.Items.Add("Painter")
+        lstOccupation.Items.Add("Artist")
+
+
+    End Sub
+
 
 
 End Class
