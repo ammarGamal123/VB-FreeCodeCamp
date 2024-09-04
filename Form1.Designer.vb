@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnGo = New System.Windows.Forms.Button()
         Me.btnVariables = New System.Windows.Forms.Button()
         Me.btnDataTypes = New System.Windows.Forms.Button()
@@ -34,6 +35,12 @@ Partial Class Form1
         Me.lblGener = New System.Windows.Forms.Label()
         Me.lstOccupation = New System.Windows.Forms.ListBox()
         Me.lblOccupation = New System.Windows.Forms.Label()
+        Me.lblNumber1 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.txtNumber1 = New System.Windows.Forms.TextBox()
+        Me.txtNumber2 = New System.Windows.Forms.TextBox()
+        Me.lblNumber2 = New System.Windows.Forms.Label()
+        Me.btnSum = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGo
@@ -114,7 +121,7 @@ Partial Class Form1
         'lblGener
         '
         Me.lblGener.AutoSize = True
-        Me.lblGener.Location = New System.Drawing.Point(92, 414)
+        Me.lblGener.Location = New System.Drawing.Point(92, 415)
         Me.lblGener.Name = "lblGener"
         Me.lblGener.Size = New System.Drawing.Size(63, 20)
         Me.lblGener.TabIndex = 9
@@ -139,11 +146,63 @@ Partial Class Form1
         Me.lblOccupation.TabIndex = 11
         Me.lblOccupation.Text = "Occupation"
         '
+        'lblNumber1
+        '
+        Me.lblNumber1.AutoSize = True
+        Me.lblNumber1.Location = New System.Drawing.Point(92, 501)
+        Me.lblNumber1.Name = "lblNumber1"
+        Me.lblNumber1.Size = New System.Drawing.Size(78, 20)
+        Me.lblNumber1.TabIndex = 12
+        Me.lblNumber1.Text = "Number 1"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'txtNumber1
+        '
+        Me.txtNumber1.Location = New System.Drawing.Point(223, 494)
+        Me.txtNumber1.Name = "txtNumber1"
+        Me.txtNumber1.Size = New System.Drawing.Size(233, 26)
+        Me.txtNumber1.TabIndex = 14
+        '
+        'txtNumber2
+        '
+        Me.txtNumber2.Location = New System.Drawing.Point(223, 556)
+        Me.txtNumber2.Name = "txtNumber2"
+        Me.txtNumber2.Size = New System.Drawing.Size(233, 26)
+        Me.txtNumber2.TabIndex = 15
+        '
+        'lblNumber2
+        '
+        Me.lblNumber2.AutoSize = True
+        Me.lblNumber2.Location = New System.Drawing.Point(92, 561)
+        Me.lblNumber2.Name = "lblNumber2"
+        Me.lblNumber2.Size = New System.Drawing.Size(78, 20)
+        Me.lblNumber2.TabIndex = 16
+        Me.lblNumber2.Text = "Number 2"
+        '
+        'btnSum
+        '
+        Me.btnSum.Location = New System.Drawing.Point(278, 604)
+        Me.btnSum.Name = "btnSum"
+        Me.btnSum.Size = New System.Drawing.Size(140, 49)
+        Me.btnSum.TabIndex = 17
+        Me.btnSum.Text = "Sum"
+        Me.btnSum.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 622)
+        Me.ClientSize = New System.Drawing.Size(800, 682)
+        Me.Controls.Add(Me.btnSum)
+        Me.Controls.Add(Me.lblNumber2)
+        Me.Controls.Add(Me.txtNumber2)
+        Me.Controls.Add(Me.txtNumber1)
+        Me.Controls.Add(Me.lblNumber1)
         Me.Controls.Add(Me.lblOccupation)
         Me.Controls.Add(Me.lstOccupation)
         Me.Controls.Add(Me.lblGener)
@@ -175,4 +234,10 @@ Partial Class Form1
     Friend WithEvents lblGener As Label
     Friend WithEvents lstOccupation As ListBox
     Friend WithEvents lblOccupation As Label
+    Friend WithEvents lblNumber1 As Label
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents txtNumber1 As TextBox
+    Friend WithEvents txtNumber2 As TextBox
+    Friend WithEvents lblNumber2 As Label
+    Friend WithEvents btnSum As Button
 End Class

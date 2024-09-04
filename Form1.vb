@@ -67,18 +67,15 @@
 
         Dim stFirstName, stLastName, stGender, stOccupation As String
 
+
         stFirstName = txtFirstName.Text
         stLastName = txtLastName.Text
         stGender = txtGender.Text
 
         stOccupation = lstOccupation.SelectedItem
 
-
         MsgBox("Hello Mr. " & stFirstName & " " & stLastName &
                " you are a " & stGender & " " & stOccupation)
-
-
-
 
     End Sub
 
@@ -92,6 +89,39 @@
 
     End Sub
 
+    Private Sub btnSum_Click(sender As Object, e As EventArgs) Handles btnSum.Click
+
+        Dim dblNumber1, dblNumber2, dblResult As Double
+
+        dblNumber1 = txtNumber1.Text
+        dblNumber2 = txtNumber2.Text
 
 
+        dblResult = dblNumber1 + dblNumber2
+        MsgBox("Sum = " & dblResult)
+
+        dblResult = dblNumber1 - dblNumber2
+        MsgBox("Subtraction = " & dblResult)
+
+        dblResult = dblNumber1 * dblNumber2
+        MsgBox("Multiplication = " & dblResult)
+
+        dblResult = dblNumber1 / dblNumber2
+        MsgBox("Division = " & dblResult)
+
+        dblResult = dblNumber1 ^ dblNumber2
+        MsgBox("Number 1 Power of Number 2 = " & dblResult)
+
+
+
+
+        ' '\' this to divide and ignore the reminder
+        dblResult = dblNumber1 \ dblNumber2
+        MsgBox("division ignore reminder = " & dblResult)
+
+        dblResult = dblNumber1 Mod dblNumber2
+        MsgBox("Num1 Mod Num2 = " & dblResult)
+
+
+    End Sub
 End Class
