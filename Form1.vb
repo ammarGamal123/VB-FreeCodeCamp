@@ -1,34 +1,27 @@
 ﻿Public Class Form1
 
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-    Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
-
-        Dim iTemperature As Integer
-
-        If Not IsNumeric(txtTemperature.Text) = True Then
-            MsgBox("You should Enter a Temperature Number")
-            Exit Sub
-        End If
-
-        iTemperature = CInt(txtTemperature.Text)
-
-
-        ' You can only test 1 variable not more 
-        Select Case iTemperature
-            Case Is = 0
-                MsgBox("Freezing")
-            Case Is < 0
-                MsgBox("Sub Zero")
-            Case 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-                MsgBox("Cold")
-            Case 11 To 20
-                MsgBox("Warm")
-            Case Else
-                MsgBox("Hot")
-        End Select
+        Dim iCounter As Integer
+        Dim stOut As String
 
 
 
+
+        For iCounter = 1 To 50 Step 5
+            MsgBox(iCounter)
+        Next
+
+
+        For iCounter = 50 To 0 Step -10
+            MsgBox(iCounter)
+        Next
+
+        For iCounter = 0 To 10 Step 2
+            stOut = stOut & iCounter & vbNewLine
+        Next
+
+        MsgBox(stOut)
 
     End Sub
 
