@@ -24,9 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.lblExamScore = New System.Windows.Forms.Label()
-        Me.txtExamScore = New System.Windows.Forms.TextBox()
-        Me.btnGrade = New System.Windows.Forms.Button()
+        Me.btnCheck = New System.Windows.Forms.Button()
+        Me.lblTemperature = New System.Windows.Forms.Label()
+        Me.txtTemperature = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -35,39 +35,40 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'lblExamScore
+        'btnCheck
         '
-        Me.lblExamScore.AutoSize = True
-        Me.lblExamScore.Location = New System.Drawing.Point(87, 229)
-        Me.lblExamScore.Name = "lblExamScore"
-        Me.lblExamScore.Size = New System.Drawing.Size(213, 20)
-        Me.lblExamScore.TabIndex = 14
-        Me.lblExamScore.Text = "What country your are from ?"
+        Me.btnCheck.Location = New System.Drawing.Point(267, 341)
+        Me.btnCheck.Name = "btnCheck"
+        Me.btnCheck.Size = New System.Drawing.Size(200, 117)
+        Me.btnCheck.TabIndex = 1
+        Me.btnCheck.Text = "Check Temperature"
+        Me.btnCheck.UseVisualStyleBackColor = True
         '
-        'txtExamScore
+        'lblTemperature
         '
-        Me.txtExamScore.Location = New System.Drawing.Point(322, 229)
-        Me.txtExamScore.Name = "txtExamScore"
-        Me.txtExamScore.Size = New System.Drawing.Size(134, 26)
-        Me.txtExamScore.TabIndex = 15
+        Me.lblTemperature.AutoSize = True
+        Me.lblTemperature.Location = New System.Drawing.Point(92, 274)
+        Me.lblTemperature.Name = "lblTemperature"
+        Me.lblTemperature.Size = New System.Drawing.Size(143, 20)
+        Me.lblTemperature.TabIndex = 2
+        Me.lblTemperature.Text = "Enter Temperature"
         '
-        'btnGrade
+        'txtTemperature
         '
-        Me.btnGrade.Location = New System.Drawing.Point(322, 288)
-        Me.btnGrade.Name = "btnGrade"
-        Me.btnGrade.Size = New System.Drawing.Size(134, 40)
-        Me.btnGrade.TabIndex = 16
-        Me.btnGrade.Text = "Get Grade"
-        Me.btnGrade.UseVisualStyleBackColor = True
+        Me.txtTemperature.Location = New System.Drawing.Point(267, 268)
+        Me.txtTemperature.MaxLength = 4
+        Me.txtTemperature.Name = "txtTemperature"
+        Me.txtTemperature.Size = New System.Drawing.Size(200, 26)
+        Me.txtTemperature.TabIndex = 3
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 682)
-        Me.Controls.Add(Me.btnGrade)
-        Me.Controls.Add(Me.txtExamScore)
-        Me.Controls.Add(Me.lblExamScore)
+        Me.Controls.Add(Me.txtTemperature)
+        Me.Controls.Add(Me.lblTemperature)
+        Me.Controls.Add(Me.btnCheck)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -75,7 +76,7 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents lblExamScore As Label
-    Friend WithEvents txtExamScore As TextBox
-    Friend WithEvents btnGrade As Button
+    Friend WithEvents btnCheck As Button
+    Friend WithEvents lblTemperature As Label
+    Friend WithEvents txtTemperature As TextBox
 End Class

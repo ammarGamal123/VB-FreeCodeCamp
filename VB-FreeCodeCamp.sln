@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB-FreeCodeCamp", "VB-FreeCodeCamp.vbproj", "{13AD5A90-5DB0-4B6A-BDFC-EA93A8800EDC}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyDLL", "..\MyDLLFolder\MyDLL\MyDLL.vbproj", "{283C43A1-1F05-4D20-9368-767F48C51E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{13AD5A90-5DB0-4B6A-BDFC-EA93A8800EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13AD5A90-5DB0-4B6A-BDFC-EA93A8800EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13AD5A90-5DB0-4B6A-BDFC-EA93A8800EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283C43A1-1F05-4D20-9368-767F48C51E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283C43A1-1F05-4D20-9368-767F48C51E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283C43A1-1F05-4D20-9368-767F48C51E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283C43A1-1F05-4D20-9368-767F48C51E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

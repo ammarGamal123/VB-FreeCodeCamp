@@ -119,5 +119,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyDLLFolder\MyDLL\MyDLL.vbproj">
+      <Project>{283c43a1-1f05-4d20-9368-767f48c51e29}</Project>
+      <Name>MyDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

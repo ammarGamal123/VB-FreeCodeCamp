@@ -1,29 +1,34 @@
 ﻿Public Class Form1
 
 
+    Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
 
-    Private Sub btnGrade_Click(sender As Object, e As EventArgs) Handles btnGrade.Click
+        Dim iTemperature As Integer
 
-        Dim iScore As Integer
-
-
-        If IsNumeric(txtExamScore) = True Then
-            ' Using CInt is more efficient
-            iScore = CInt(txtExamScore.Text)
-        Else
-            MsgBox("your input must be a number")
+        If Not IsNumeric(txtTemperature.Text) = True Then
+            MsgBox("You should Enter a Temperature Number")
             Exit Sub
         End If
 
-        If iScore < 0 Or iScore > 100 Then
-            MsgBox("Not a valid grade , it should be between 0 and 100")
-        ElseIf iScore >= 50 Then
-            MsgBox("Passed")
-        ElseIf iScore < 50 Then
-            MsgBox("Fail")
-        End If
+        iTemperature = CInt(txtTemperature.Text)
 
-        MsgBox("all done")
+
+        ' You can only test 1 variable not more 
+        Select Case iTemperature
+            Case Is = 0
+                MsgBox("Freezing")
+            Case Is < 0
+                MsgBox("Sub Zero")
+            Case 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+                MsgBox("Cold")
+            Case 11 To 20
+                MsgBox("Warm")
+            Case Else
+                MsgBox("Hot")
+        End Select
+
+
+
 
     End Sub
 
