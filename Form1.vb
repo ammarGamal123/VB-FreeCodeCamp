@@ -2,29 +2,31 @@
 
 
 
-    Private Sub btnGreeting_Click(sender As Object, e As EventArgs) Handles btnGreeting.Click
+    Private Sub btnGrade_Click(sender As Object, e As EventArgs) Handles btnGrade.Click
 
-        Dim stCountry As String
+        Dim iScore As Integer
 
-        stCountry = txtCountry.Text
 
-        If stCountry.ToUpper = "EGYPT" Then
-            MsgBox("Hello to Egyptions")
-            MsgBox("you are welcome")
-        ElseIf stCountry.ToUpper = "Greek" Then
-            MsgBox("u r from Greece")
-            MsgBox("welcome bro")
+        If IsNumeric(txtExamScore) = True Then
+            ' Using CInt is more efficient
+            iScore = CInt(txtExamScore.Text)
         Else
-            MsgBox("hello anonymouse")
-            MsgBox("I hope u r well")
+            MsgBox("your input must be a number")
+            Exit Sub
         End If
 
-        MsgBox("You Entered " & stCountry)
+        If iScore < 0 Or iScore > 100 Then
+            MsgBox("Not a valid grade , it should be between 0 and 100")
+        ElseIf iScore >= 50 Then
+            MsgBox("Passed")
+        ElseIf iScore < 50 Then
+            MsgBox("Fail")
+        End If
 
-
-
+        MsgBox("all done")
 
     End Sub
+
 
 
 End Class
