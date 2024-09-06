@@ -2,29 +2,17 @@
 
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-        Dim iCount As Integer
-        iCount = 0
+        Dim stAge As String
+        Dim iAge As Integer
 
-
-        Do While iCount <= 5
-            MsgBox(iCount)
-            iCount += 1
+        Do While Not (IsNumeric(stAge))
+            stAge = InputBox("Please Enter Your Name")
         Loop
 
-        iCount = 1
+        'Explicit type conversion
+        iAge = CInt(stAge)
 
-        Do Until iCount > 5
-            MsgBox("Hello" & iCount)
-            iCount += 1
-        Loop
-
-
-        iCount = 1
-
-        Do
-            MsgBox("Hello Mr. Ammar" & iCount)
-            iCount += 1
-        Loop Until iCount = 5
+        MsgBox("Your Age is = " & iAge)
 
 
     End Sub
