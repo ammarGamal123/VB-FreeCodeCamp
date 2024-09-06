@@ -1,32 +1,30 @@
 ﻿Public Class Form1
 
-    Private Sub btnCountEvenOdd_Click(sender As Object, e As EventArgs) Handles btnCountEvenOdd.Click
+    Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-        Dim iLimit, iCount As Integer
-        Dim stChoice As String
-
-
-        iLimit = InputBox("what is your number")
-        stChoice = InputBox("Even Or Odd")
+        Dim iCount As Integer
+        iCount = 0
 
 
-        Select Case stChoice
-            Case Is = "Even"
-                For iCount = 0 To iLimit Step 2
-                    MsgBox(iCount)
-                Next
+        Do While iCount <= 5
+            MsgBox(iCount)
+            iCount += 1
+        Loop
 
-            Case Else
-                For iCount = 1 To iLimit Step 2
-                    MsgBox(iCount)
-                Next
-        End Select
+        iCount = 1
 
-
+        Do Until iCount > 5
+            MsgBox("Hello" & iCount)
+            iCount += 1
+        Loop
 
 
+        iCount = 1
 
-
+        Do
+            MsgBox("Hello Mr. Ammar" & iCount)
+            iCount += 1
+        Loop Until iCount = 5
 
 
     End Sub

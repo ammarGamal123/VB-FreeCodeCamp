@@ -24,8 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.btnCountEvenOdd = New System.Windows.Forms.Button()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.btnGo = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -34,33 +34,33 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'btnCountEvenOdd
-        '
-        Me.btnCountEvenOdd.Location = New System.Drawing.Point(206, 321)
-        Me.btnCountEvenOdd.Name = "btnCountEvenOdd"
-        Me.btnCountEvenOdd.Size = New System.Drawing.Size(296, 196)
-        Me.btnCountEvenOdd.TabIndex = 1
-        Me.btnCountEvenOdd.Text = "Count up odd even"
-        Me.btnCountEvenOdd.UseVisualStyleBackColor = True
-        '
         'ContextMenuStrip2
         '
         Me.ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
         Me.ContextMenuStrip2.Size = New System.Drawing.Size(61, 4)
         '
+        'btnGo
+        '
+        Me.btnGo.Location = New System.Drawing.Point(199, 212)
+        Me.btnGo.Name = "btnGo"
+        Me.btnGo.Size = New System.Drawing.Size(232, 146)
+        Me.btnGo.TabIndex = 3
+        Me.btnGo.Text = "Go"
+        Me.btnGo.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 682)
-        Me.Controls.Add(Me.btnCountEvenOdd)
+        Me.Controls.Add(Me.btnGo)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents btnCountEvenOdd As Button
     Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
+    Friend WithEvents btnGo As Button
 End Class
