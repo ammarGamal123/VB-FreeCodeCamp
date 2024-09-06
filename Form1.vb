@@ -2,18 +2,18 @@
 
     Private Sub btnGo_Click(sender As Object, e As EventArgs) Handles btnGo.Click
 
-        Dim stAge As String
-        Dim iAge As Integer
+        Dim astFruits(4) As String
 
-        Do While Not (IsNumeric(stAge))
-            stAge = InputBox("Please Enter Your Name")
-        Loop
+        astFruits(0) = "Apple"
+        astFruits(1) = "Banana"
+        astFruits(2) = "Orange"
+        astFruits(3) = "Pineapple"
+        astFruits(4) = "Mango"
 
-        'Explicit type conversion
-        iAge = CInt(stAge)
-
-        MsgBox("Your Age is = " & iAge)
-
+        Dim iCount As Integer
+        For iCount = 0 To astFruits.Length - 1
+            MsgBox(astFruits(iCount))
+        Next
 
     End Sub
 
